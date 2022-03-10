@@ -712,52 +712,52 @@ aside {
 }
 /*images for songs*/
 #cover1 {
-    background-image: url(resources/cover1.jpg);
+    background-image: url(./resources/cover1.jpg);
     background-size: cover;
     background-attachment: initial;
 }
 #cover2 {
-    background-image: url(resources/cover2.jpg);
+    background-image: url(./resources/cover2.jpg);
     background-size: cover;
     background-attachment: initial;
 }
 #cover3 {
-    background-image: url(resources/cover3.jpg);
+    background-image: url(./resources/cover3.jpg);
     background-size: cover;
     background-attachment: initial;
 }
 #cover4 {
-    background-image: url(resources/cover4.jpg);
+    background-image: url(./resources/cover4.jpg);
     background-size: cover;
     background-attachment: initial;
 }
 #cover5 {
-    background-image: url(resources/cover5.jpg);
+    background-image: url(./resources/cover5.jpg);
     background-size: cover;
     background-attachment: initial;
 }
 #cover6 {
-    background-image: url(resources/cover1.jpg);
+    background-image: url(./resources/cover1.jpg);
     background-size: cover;
     background-attachment: initial;
 }
 #cover7 {
-    background-image: url(resources/cover2.jpg);
+    background-image: url(./resources/cover2.jpg);
     background-size: cover;
     background-attachment: initial;
 }
 #cover8 {
-    background-image: url(resources/cover3.jpg);
+    background-image: url(./resources/cover3.jpg);
     background-size: cover;
     background-attachment: initial;
 }
 #cover9 {
-    background-image: url(resources/cover4.jpg);
+    background-image: url(./resources/cover4.jpg);
     background-size: cover;
     background-attachment: initial;
 }
 #cover10 {
-    background-image: url(resources/cover5.jpg);
+    background-image: url(./resources/cover5.jpg);
     background-size: cover;
     background-attachment: initial;
 }
