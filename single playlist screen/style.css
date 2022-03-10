@@ -1,0 +1,792 @@
+/* rules for body */
+body {
+    background-image: linear-gradient(red, white); /*sets bg-color*/
+    background-size: cover;
+    margin: 10px 30px 10px 30px;
+    font-family: "Alegreya";
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+/*rule applies to all images in webpage*/
+img {
+    background-size: contain;
+}
+
+/*rule applies header block*/
+#header-div {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 5vh;
+}
+
+/* rules below applies to header items */
+#top-img {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+}
+#fav-header {
+    margin-top: 20px;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid grey; */
+    padding: 2px;
+}
+#search-box {
+    border: none;
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    background-color: #12193e;
+    /* border-radius: 10px; */
+    width: 200px;
+    flex-grow: 2;
+    color: white;
+}
+#search-box:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+}
+.search-bar-button {
+    padding: 6px 10px;
+    margin-top: 8px;
+    border: none;
+    font-size: 17px;
+    background-color: #12193e;
+}
+#button1 {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: white;
+    /* background-image: url(''); */
+}
+#button2 {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+}
+#user-img {
+    height: 60px;
+    width: 60px;
+    background-size: contain;
+    border-radius: 50%;
+}
+#notification-icon {
+    margin-top: 20px;
+}
+/*below rules are applied to band image and info*/
+
+#band-info {
+    position: relative;
+    background-image: url(resources/Talking\To\Mice\Elf.jpg);
+    background-size: cover;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+}
+#band-image {
+    display: inline-block;
+    /* position: relative; */
+    margin: 0px;
+    height: 400px;
+    width: 400px;
+}
+#band-logo {
+    height: 490px;
+    width: 400px;
+    background-size: contain;
+}
+#about-band {
+    /* position: relative; */
+    display: inline-block;
+    margin-left: 10px;
+    height: 400px;
+    width: 400px;
+}
+#about-band p,
+h6 {
+    /* position: relative; */
+    font-size: small;
+    color: darkgrey;
+}
+
+/*play-all -button rules below*/
+#play-all-button {
+    background: url(resources/Love\and\Liberty.jpg);
+    background-size: cover;
+    height: 50px;
+    width: 160px;
+    margin-top: 30px;
+}
+#play-all-button div {
+    position: absolute;
+    color: gray;
+    font-size: smaller;
+    text-align: center;
+    margin-left: 38px;
+    margin-top: 10px;
+}
+
+/*below this are rules for similar artists block*/
+#artists-block {
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+}
+#artists-block h4 {
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+/*song-list-block*/
+#song-list {
+    position: relative;
+    list-style: none;
+    margin-bottom: -4px;
+}
+.song-list-items {
+    position: relative;
+    margin-bottom: 30px;
+}
+.song-img {
+    height: 88px;
+    width: 88px;
+    background-size: contain;
+}
+.song-img:hover {
+    box-shadow: 1px 1px 40px 1px;
+    background-size: cover;
+}
+.song-name {
+    position: absolute;
+    display: inline-block;
+    margin: 0px 10px 0px 20px;
+    font-size: 25px;
+}
+.duration {
+    display: inline-block;
+    position: absolute;
+    font-size: large;
+    margin: 30px 10px 0px 20px;
+}
+
+/*below are rules for playlists styles*/
+#playlist-block {
+    margin-top: 30px;
+    width: 65%;
+    margin-left: -41px;
+}
+#song-playlist {
+    list-style-image: url("https://img.icons8.com/color/48/000000/microsoft-groove.png");
+}
+.playlist-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    background: linear-gradient(to left, #624362, #6c5b7b, grey);
+    height: 80px;
+    border-radius: 10px;
+}
+.playlist-song-image {
+    display: inline-block;
+    height: 70px;
+    width: 65px;
+    border-radius: 10px;
+    margin: 5px 0px 5px 10px;
+}
+.song-list-name {
+    display: inline-block;
+    font-size: x-large;
+    font-weight: bolder;
+    margin: 25px 0px 10px 20px;
+    width: 660px;
+}
+.heart-icon {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    margin: 28px 0px 10px -31px;
+}
+.add-icon {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 30px 0px 10px 15px;
+}
+
+/*recently played list*/
+
+#recently-played {
+    position: relative;
+    margin: -566px 10px 0px 0px;
+    left: 63%;
+    width: 370px;
+}
+
+#recently-played h3 {
+    margin-left: 60px;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+#playlist-container {
+    margin-left: 25px;
+    list-style-type: none;
+    display: inline-block;
+}
+.playlist-image {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 12px 1px;
+}
+.playlist {
+    margin-bottom: 50px;
+}
+/*images for songs*/
+#cover1 {
+    background-image: url(resources/cover1.jpg);
+    background-size: cover;
+    background-attachment: initial;
+}
+#cover2 {
+    background-image: url(resources/cover2.jpg);
+    background-size: cover;
+    background-attachment: initial;
+}
+#cover3 {
+    background-image: url(resources/cover3.jpg);
+    background-size: cover;
+    background-attachment: initial;
+}
+#cover4 {
+    background-image: url(resources/cover4.jpg);
+    background-size: cover;
+    background-attachment: initial;
+}
+/*styles for songs name and artists name*/
+.song-name {
+    display: inline-block;
+    position: absolute;
+    margin-left: 20px;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.artist-name {
+    display: inline-block;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 27px;
+    font-size: initial;
+    font-weight: initial;
+    color: lightsteelblue;
+}
+.like-icon {
+    display: inline-block;
+    background: url(resources/heart4.svg);
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    margin-left: 200px;
+    margin-bottom: 22px;
+}
+
+/*below are rules for music player*/
+
+.control-icon {
+    height: 22px;
+    width: 22px;
+}
+.control-icon:hover {
+    box-shadow: 1px 1px 40px 1px;
+}
+.control-icon-small:hover {
+    box-shadow: 1px 1px 40px 1px;
+}
+
+.control-icon-large:hover {
+    box-shadow: 1px 1px 40px 1px;
+}
+
+#music-player {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    background: linear-gradient(to right, #114357, #f29492);
+    margin: -10px -30px;
+}
+
+#song-info {
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    height: 55px;
+    width: 200px;
+    /* border: 1px solid black; */
+}
+
+#current-song-image {
+    height: 45px;
+    width: 50px;
+    display: inline-block;
+    position: absolute;
+}
+
+#current-song-name {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    margin: 0px 0px 10px 55px;
+}
+
+#current-singer-name {
+    display: inline-block;
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    color: thistle;
+    margin: 25px 0px 5px 55px;
+}
+
+#player-heart-icon {
+    display: inline-block;
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    margin: 4px 0px 0px 135px;
+}
+#player-heart-icon:hover {
+    box-shadow: 1px 1px 40px 1px;
+}
+#player-dislike-icon {
+    display: inline-block;
+    position: absolute;
+    margin: 4px 0px 0px 170px;
+}
+
+#player-block {
+    /* border: 1px solid black; */
+    display: inline-block;
+    margin-left: 20px;
+    height: 80px;
+    width: 715px;
+}
+
+#control-block {
+    /* border: 1px solid black; */
+    display: inline-block;
+    position: relative;
+    margin-left: 175px;
+    height: 40px;
+    width: 350px;
+    margin-top: 10px;
+}
+
+#player-shuffle-icon {
+    display: inline-block;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#player-skipstart-icon {
+    display: inline-block;
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 5px;
+}
+
+#player-play-icon {
+    display: inline-block;
+    position: relative;
+    margin-left: 150px;
+    height: 50px;
+    width: 50px;
+    margin-top: -10px;
+}
+#player-skipend-icon {
+    display: inline-block;
+    position: absolute;
+    margin-left: 35px;
+    transform: scalex(-1);
+    margin-top: 5px;
+}
+#player-repeat-icon {
+    display: inline-block;
+    position: absolute;
+    margin-left: 115px;
+    margin-top: 5px;
+}
+
+#track-block {
+    /* border: 1px solid black; */
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    width: 610px;
+    margin-left: 50px;
+    margin-bottom: 8px;
+}
+
+#start-timer {
+    display: inline-block;
+    position: absolute;
+    height: 18px;
+    width: 28px;
+    font-size: 16px;
+    margin-top: -14px;
+    margin-left: 5px;
+    color: black;
+    font-weight: 500;
+}
+
+#full-length {
+    display: inline-block;
+    position: absolute;
+    height: 2px;
+    width: 530px;
+    margin: -2px 5px 0px 40px;
+    border-radius: 2px;
+    background-color: darkgray;
+}
+
+#current-length {
+    display: inline-block;
+    position: absolute;
+    height: 3px;
+    width: 160px;
+    margin: -3px 5px 0px 40px;
+    border-radius: 2px;
+    background-color: #4788c7;
+}
+
+#player-dot-icon {
+    display: inline-block;
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    margin-left: 192px;
+    margin-top: -14px;
+}
+
+#end-timer {
+    display: inline-block;
+    position: absolute;
+    height: 18px;
+    width: 28px;
+    font-size: 16px;
+    margin-top: -14px;
+    margin-left: 578px;
+    color: black;
+    font-weight: 500;
+}
+
+#volume-block {
+    display: inline-block;
+    position: relative;
+    height: 70px;
+    width: 290px;
+    margin-left: 20px;
+}
+
+#player-queue-icon {
+    display: inline-block;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 16px;
+}
+#player-devices-icon {
+    display: inline-block;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 16px;
+}
+#player-sound-icon {
+    display: inline-block;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 16px;
+}
+
+#sound-block {
+    display: inline-block;
+    position: absolute;
+    height: 15px;
+    width: 125px;
+    margin-left: 130px;
+    margin-top: 20px;
+}
+
+#start-value {
+    display: inline-block;
+    position: absolute;
+    height: 15px;
+    width: 10px;
+    font-size: 14px;
+    color: black;
+    margin-top: -5px;
+}
+
+#full-value {
+    display: inline-block;
+    position: absolute;
+    height: 2px;
+    width: 80px;
+    margin-left: 18px;
+    margin-top: 3px;
+    border-radius: 2px;
+    background-color: darkgray;
+}
+
+#current-value {
+    display: inline-block;
+    position: absolute;
+    height: 3px;
+    width: 56px;
+    margin-left: 18px;
+    margin-top: 3px;
+    border-radius: 2px;
+    background-color: #4788c7;
+}
+
+#player-dot-sound-icon {
+    display: inline-block;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin-left: 65px;
+    margin-top: -4px;
+}
+
+#end-value {
+    display: inline-block;
+    position: absolute;
+    height: 15px;
+    width: 10px;
+    font-size: 14px;
+    color: black;
+    margin-left: 105px;
+    margin-top: -5px;
+}
+
+#player-fullscreen-icon {
+    display: inline-block;
+    position: absolute;
+    margin-left: 265px;
+    margin-top: 16px;
+}
+
+/*below these are the media queries*/
+
+@media screen and (max-width: 1329px) {
+    .song-list-name {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1182px) {
+    #artists-block {
+        margin-left: -40px;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    #artists-block {
+        margin-left: 50px;
+        margin-top: 46px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .song-list-name {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 949px) {
+    #recently-played {
+        left: 55%;
+    }
+}
+
+@media screen and (max-width: 889px) {
+    #band-image {
+        width: 100%;
+    }
+    #band-logo {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 889px) {
+    #about-band {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 789px) {
+    .like-icon {
+        margin-left: 100px;
+    }
+    #recently-played {
+        left: 55%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #artists-block {
+        margin-left: -45px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #fav-header {
+        display: none;
+    }
+    #page-logo {
+        margin-left: -20px;
+    }
+    #search-box {
+        width: 120px;
+    }
+}
+
+/*media query for media player*/
+
+@media screen and (max-width: 694px) {
+    #control-block {
+        margin-left: 0px;
+    }
+    #track-block {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    #full-length {
+        width: 360px;
+    }
+
+    #current-length {
+        width: 160px;
+    }
+    #end-timer {
+        margin-left: 405px;
+    }
+}
+@media screen and (max-width: 687px) {
+    #artists-block {
+        margin-left: 50px;
+        margin-top: -25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .song-list-name {
+        width: 40%;
+        margin-left: 0px;
+        font-size: 15px;
+    }
+    .playlist-song-image {
+        margin-left: 0px;
+    }
+    .add-icon {
+        margin-left: 6px;
+    }
+    .heart-icon {
+        margin-left: -38px;
+    }
+
+    /*media query for music player*/
+
+    #music-player {
+        /* margin-top: 500px; */
+        margin-left: 0px;
+        justify-content: flex-start;
+    }
+
+    #control-block {
+        margin-left: 0px;
+    }
+
+    #track-block {
+        margin-left: -30px;
+        margin-top: 10px;
+    }
+
+    #full-length {
+        width: 360px;
+    }
+
+    #current-length {
+        width: 160px;
+    }
+    #end-timer {
+        margin-left: 405px;
+    }
+}
+
+@media screen and (max-width: 583px) {
+    #music-player {
+        margin-left: -20px;
+    }
+}
+@media screen and (max-width: 570px) {
+    .like-icon {
+        margin-left: 70px;
+    }
+    .song-name {
+        font-size: 1.2rem;
+        margin-left: 0px;
+    }
+    .artist-name {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 553px) {
+    #recently-played h3 {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 532px) {
+    #recently-played {
+        left: 40%;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    #recently-played {
+        left: 45%;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .song-list-name {
+        width: 55%;
+    }
+    .add-icon {
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 466px) {
+    #full-length {
+        width: 320px;
+    }
+
+    #end-timer {
+        margin-left: 365px;
+    }
+}

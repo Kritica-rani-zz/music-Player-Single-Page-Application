@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Single Playlist Screen</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Alegreya">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- top bar -->
+
+    <header>
+        <div id="header-div">
+            <!-- page logo -->
+
+            <div id="page-logo"><img
+                    src="data:image/png;base64,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"
+                    id="top-img"></div>
+            <span id="fav-header">Favourites</span>
+
+            <!-- search bar -->
+
+            <div id="search-container">
+                <form action="./index.html">
+                    <button type="submit" class="search-bar-button" id="button1"><img
+                            src="https://img.icons8.com/nolan/30/search.png" /></button>
+                    <input type="text" placeholder="Search.." name="search" id="search-box">
+                    <button type="button" class="search-bar-button" id="button2"><img
+                            src="https://img.icons8.com/color/30/000000/microphone.png" /></button>
+                </form>
+            </div>
+
+            <!-- notification and user icon -->
+
+            <div id="notifications">
+                <img id="notification-icon" src="https://img.icons8.com/ios/30/000000/appointment-reminders.png" />
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <!-- band image and information -->
+        <div id="band-info">
+            <div id="band-image">
+                <img id="band-logo" src="resources/coldplay.jpg">
+            </div>
+            <div id="about-band">
+                <h3>Coldpaly</h3>
+                <h6>British Band</h6>
+                <p>
+                    Coldplay is an English rock band formed in London in 1996.
+                    The band's members are vocalist/pianist Chris Martin, guitarist Jonny Buckland,
+                    bass player Guy Berryman and drummer Will Champion.
+                    All of Coldplay's previous albums have reached number one in the UK. Last year's
+                    intimate and melancholy Ghost Stories was the fourth best-selling record of 2014
+                    worldwide, shifting 3.7 million copies in total.
+                </p>
+                <div id="play-all-button">
+                    <div>Play All</div>
+                </div>
+                <p>247 Tracks | 128 Albums</p>
+            </div>
+
+
+            <!-- artists song column -->
+            <div id="artists-block">
+                <h4>Band Hits</h4>
+                <ul id="song-list">
+                    <li class="song-list-items">
+                        <img src="resources/something.jpg" class="song-img">
+                        <div class="song-name">Something</div>
+                        <div class="duration">4:02</div>
+                    </li>
+                    <li class="song-list-items">
+                        <img src="resources/fixyou.jpg" class="song-img">
+                        <div class="song-name">Fix</div>
+                        <div class="duration">3:47</div>
+                    </li>
+                    <li class="song-list-items">
+                        <img src="resources/yellow.jpg" class="song-img">
+                        <div class="song-name">Yellow</div>
+                        <div class="duration">3:50</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Now we will have the playlists -->
+        <div id="playlist-block">
+            <ul id="song-playlist">
+                <li class="playlist-item">
+                    <img src="resources/attention.jpg" class="playlist-song-image">
+                    <span class="song-list-name">Attention</span>
+                    <!-- <span class="album-name">Japan Tour</span> -->
+                    <img src="https://img.icons8.com/ios/20/000000/like.png" class="heart-icon" />
+                    <img src="https://img.icons8.com/android/20/000000/plus.png" class="add-icon" />
+                </li>
+                <li class="playlist-item">
+                    <img src="resources/believer.jpg" class="playlist-song-image">
+                    <span class="song-list-name">Believer</span>
+                    <!-- <span class="album-name" id="album2">Rock</span> -->
+                    <img src="https://img.icons8.com/ios/20/000000/like.png" class="heart-icon" />
+                    <img src="https://img.icons8.com/android/20/000000/plus.png" class="add-icon" />
+                </li>
+                <li class="playlist-item">
+                    <img src="resources/fixyou.jpg" class="playlist-song-image">
+                    <span class="song-list-name">Fix You</span>
+                    <!-- <span class="album-name" id="album3">Originals</span> -->
+                    <img src="https://img.icons8.com/ios/20/000000/like.png" class="heart-icon" />
+                    <img src="https://img.icons8.com/android/20/000000/plus.png" class="add-icon" />
+                </li>
+                <li class="playlist-item">
+                    <img src="resources/memories.jpg" class="playlist-song-image">
+                    <span class="song-list-name">Memories</span>
+                    <!-- <span class="album-name" id="album4">Maroon 5</span> -->
+                    <img src="https://img.icons8.com/ios/32/000000/like.png" class="heart-icon" />
+                    <img src="https://img.icons8.com/android/24/000000/plus.png" class="add-icon" />
+                </li>
+                <li class="playlist-item">
+                    <img src="resources/pallo-latke.jpg" class="playlist-song-image">
+                    <span class="song-list-name">Pallo Latke</span>
+                    <!-- <span class="album-name" id="album5">Title Track</span> -->
+                    <img src="https://img.icons8.com/ios/32/000000/like.png" class="heart-icon" />
+                    <img src="https://img.icons8.com/android/24/000000/plus.png" class="add-icon" />
+                </li>
+                <li class="playlist-item">
+                    <img src="resources/aankh-marey.jpg" class="playlist-song-image">
+                    <span class="song-list-name">Aankh</span>
+                    <!-- <span class="album-name" id="album6">Bonus Track</span> -->
+                    <img src="https://img.icons8.com/ios/32/000000/like.png" class="heart-icon" />
+                    <img src="https://img.icons8.com/android/24/000000/plus.png" class="add-icon" />
+                </li>
+            </ul>
+        </div>
+        <!-- below this is for recently played -->
+        <div id="recently-played">
+            <h3>Recently Played</h3>
+            <ol id="playlist-container">
+                <li class="playlist">
+                    <div class="playlist-image" id="cover1"></div>
+                    <span class="song-name">Perfect</span>
+                    <span class="artist-name">Ed-shreen</span>
+                    <div class="like-icon"></div>
+                </li>
+                <li class="playlist">
+                    <div class="playlist-image" id="cover2"></div>
+                    <span class="song-name">Pitbull</span>
+                    <span class="artist-name">Exotic</span>
+                    <div class="like-icon"></div>
+                </li>
+                <li class="playlist">
+                    <div class="playlist-image" id="cover3"></div>
+                    <span class="song-name">Justin</span>
+                    <span class="artist-name">Sorry</span>
+                    <div class="like-icon"></div>
+                </li>
+                <li class="playlist">
+                    <div class="playlist-image" id="cover4"></div>
+                    <span class="song-name">Inna</span>
+                    <span class="artist-name">Yalla</span>
+                    <div class="like-icon"></div>
+                </li>
+            </ol>
+        </div>
+
+        <!-- now we will design the music player -->
+        <div id="music-player">
+            <div id="song-info">
+                <img id="current-song-image" src="resources/shapeofyou.jpeg" />
+                <span id="current-song-name">Shape</span>
+                <span id="current-singer-name">Ed</span>
+                <img src="https://img.icons8.com/ios/32/000000/like.png" id="player-heart-icon" />
+                <img src="https://img.icons8.com/ios-glyphs/24/000000/cancel-2.png" class="control-icon"
+                    id="player-dislike-icon" />
+            </div>
+            <div id="player-block">
+                <div id="control-block">
+                    <img src="https://img.icons8.com/android/24/000000/shuffle.png" class="control-icon"
+                        id="player-shuffle-icon" />
+                    <img src="https://img.icons8.com/android/24/000000/skip-to-start.png" class="control-icon"
+                        id="player-skipstart-icon" />
+                    <img src="https://img.icons8.com/cotton/64/000000/circled-play.png" class="control-icon-large"
+                        id="player-play-icon" />
+                    <!-- <img src="https://img.icons8.com/cotton/64/000000/circled-pause.png" class="control-icon-large" id="player-pause-icon"/>   to use after button click -->
+                    <img src="https://img.icons8.com/android/24/000000/skip-to-start.png" class="control-icon"
+                        id="player-skipend-icon" />
+                    <!--to flip and use for skip to end -->
+                    <img src="https://img.icons8.com/android/24/000000/repeat.png" class="control-icon"
+                        id="player-repeat-icon" />
+                </div>
+                <div id="track-block">
+                    <span id="start-timer">1:00</span>
+                    <div id="full-length">
+                    </div>
+                    <div id="current-length">
+                    </div>
+                    <img src="https://img.icons8.com/ultraviolet/40/000000/circled-dot.png" class="control-icon-small"
+                        id="player-dot-icon" />
+                    <span id="end-timer">4:00</span>
+                </div>
+            </div>
+            <div id="volume-block">
+                <img src="https://img.icons8.com/ios/50/000000/personal-video-recorder-menu.png" class="control-icon"
+                    id="player-queue-icon" />
+                <img src="https://img.icons8.com/ios-glyphs/24/000000/multiple-devices.png" class="control-icon"
+                    id="player-devices-icon" />
+                <img src="https://img.icons8.com/ios/50/000000/room-sound.png" class="control-icon"
+                    id="player-sound-icon" />
+                <div id="sound-block">
+                    <span id="start-value">1</span>
+                    <div id="full-value">
+                    </div>
+                    <div id="current-value">
+                    </div>
+                    <img src="https://img.icons8.com/ultraviolet/40/000000/circled-dot.png" class="control-icon-small"
+                        id="player-dot-sound-icon" />
+                    <span id="end-value">10</span>
+                </div>
+                <img src="https://img.icons8.com/material-sharp/50/000000/full-screen.png" class="control-icon"
+                    id="player-fullscreen-icon" />
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

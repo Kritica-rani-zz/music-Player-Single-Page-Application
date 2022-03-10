@@ -1,0 +1,10 @@
+Hi!
+All files are arranged beforehand.
+
+#extract the zip file.
+#there are two files for two of the screen.
+#there is resources folder in each of the file which contains images,icons,vectors,etc.
+#although some images and icons are embedded from other sites which needs to be loaded.
+#index.html is the html file in both folders with their respective style.css files.
+
+Thanks!
